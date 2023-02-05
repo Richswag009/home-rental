@@ -1,11 +1,12 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
+import Benefits from "./Components/Services/Benefits";
 
 function App() {
   return (
-    <div className="container  mx-auto">
+    <div className=" ">
       <Header />
-      <h1 className="text-3xl text-red-700">hello world</h1>
+      <Benefits />
     </div>
   );
 }
