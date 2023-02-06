@@ -1,10 +1,15 @@
 import React from "react";
-import images1 from "./../assets/img/properties1.png";
+// import images1 from "./../assets/img/properties1.png";
+import PropertiesData from "../Properties.json";
+import PropertiesItem from "./PropertiesItem";
 
 const Properties = () => {
+  const propertiesData = PropertiesData.map((item) => {
+    return <PropertiesItem item={item} key={item.id} />;
+  });
   return (
-    <section className="container md:px-32 px-10 mx-auto">
-      <div className="flex justify-between">
+    <section className="container bg-[#F5F5F5] md:px-32 px-10 mx-auto">
+      <div className="flex justify-between items-center">
         <div>
           <h1 className="leading-7 text-2xl lg:text-4xl py-2 font-extrabold text-[#18191f]">
             List Of Properties
@@ -19,25 +24,9 @@ const Properties = () => {
 
       {/* properties */}
 
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-3 my-10">
-        <div className="border shadow-md">
-          <img src={images1} alt="" className="w-full" />
-          <div className="mx-4">
-            <h2 className="font-bold text-xl tracking-tighter capitalize">
-              2578 Folsom street, san francisco, CA, 94110
-            </h2>
-            <div className="my-2">
-              <p className=" text-[#818181] font-normal leading-6">
-                Private Room
-              </p>
-              <p className="text-[#f4511e] font-semibold text-2xl">
-                $1200/Month
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="mt-4"></div>
-      </section>
+      <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center  gap-8 my-10  ">
+        {propertiesData}
+      </div>
     </section>
   );
 };

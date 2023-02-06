@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import hero1 from "../../assets/img/hero2.png";
-import hero2 from "../../assets/img/house.png";
+import hero2 from "../../assets/img/properties6.png";
 
 const Header = () => {
   return (
