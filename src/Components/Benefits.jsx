@@ -1,25 +1,20 @@
 import React from "react";
-import benefitsImg from "../../assets/img/benefits.png";
-import { benefitsList } from "../../Data";
-import icon1 from "../../assets/img/icons/dollar.png";
+import benefitsImg from "../assets/img/benefits.png";
+import Data from "../Data.json";
 
 const Benefits = () => {
-  const benefits = benefitsList.map((item) => {
+  const benefits = Data.map((item) => {
     return (
       <div key={item.id}>
-        <img
-          src={item.image}
-          alt=""
-          className="p-4 my-3 leading-8 shadow-md border"
-        />
-        <p className="text-md font-semibold w-5/6 md:w-3/4 capitalize lg:text-[1em]">
+        <img src={item.image} alt="" className="p-4 my-3 leading-8 shadow-md" />
+        <p className="text-md text-left font-semibold w-5/6 md:w-3/4 capitalize lg:text-[1em]">
           {item.text}
         </p>
       </div>
     );
   });
   return (
-    <section className="container mx-auto my-20 px-10 text-center lg:text-left ">
+    <section className="container mx-auto my-20 px-10 md:px-32 text-center lg:text-left ">
       <h1 className="text-3xl font-extrabold">
         Minimum Living Cost Takes Care of Everything
       </h1>

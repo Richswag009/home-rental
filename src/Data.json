@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "../../icons/dollar.png",
+    "text": "Pay As Little As Possible"
+  },
+  {
+    "id": 2,
+    "image": "../../icons/community.png",
+    "text": "Enjoy Wisdom Of Community!"
+  },
+  {
+    "id": 3,
+    "image": "../../icons/stack.png",
+    "text": "Let's Somebody Else Take Care Of Landlord"
+  },
+  {
+    "id": 4,
+    "image": "../../icons/plant.png",
+    "text": "Enjoy Peaceful Environment"
+  },
+  {
+    "id": 5,
+    "image": "../../icons/shield.png",
+    "text": "Stay Safe! Save Money"
+  },
+  {
+    "id": 6,
+    "image": "../../icons/eye.png",
+    "text": "Pay For What You Use"
+  }
+]
