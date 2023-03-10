@@ -7,3 +7,9 @@
     @apply ;
   }
 } */
+
+@layer base {
+  label {
+    @apply my-10;
+  }
+}

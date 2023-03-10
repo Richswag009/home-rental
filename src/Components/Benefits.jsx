@@ -1,6 +1,7 @@
 import React from "react";
 import benefitsImg from "../assets/img/benefits.png";
 import Data from "../Data.json";
+import { motion } from "framer-motion";
 
 const Benefits = () => {
   const benefits = Data.map((item) => {
@@ -14,7 +15,12 @@ const Benefits = () => {
     );
   });
   return (
-    <section className="container mx-auto my-20 px-10 md:px-32 text-center lg:text-left ">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      className="container mx-auto my-20 px-10 md:px-32 text-center lg:text-left "
+    >
       <h1 className="text-3xl font-extrabold">
         Minimum Living Cost Takes Care of Everything
       </h1>
@@ -23,7 +29,7 @@ const Benefits = () => {
         <img src={benefitsImg} alt="" />
         <div className="grid grid-cols-3 space-x-2  my-20">{benefits}</div>
       </section>
-    </section>
+    </motion.section>
   );
 };
 

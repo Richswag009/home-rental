@@ -5,7 +5,7 @@ import services3 from "../assets/img/services3.png";
 import services4 from "../assets/img/services4.png";
 const Services = () => {
   return (
-    <section className="container grid grid-cols-1 lg:grid-cols-2  md:space-x-5 space-y-20 lg:justify-items-center mx-auto lg:px-32 px-10">
+    <section className="container py-14 md:max-w-11/12 grid grid-cols-1 lg:grid-cols-2  md:space-x-5 space-y-20 lg:justify-items-center mx-auto lg:px-32 px-10">
       <div className="border-2 grid w-11/12 grid-cols-2 lg:w-1/2 gap-x-6 gap-y-5 mx-3 text-center relative">
         <div>
           <img src={services1} alt="" className="w-full" />
@@ -32,7 +32,7 @@ const Services = () => {
           roommate finder option. We provide you the flexibility that you most
           desire.
         </p>
-        <button className=" mt-10 outline-none rounded-lg bg-[#F4511E] p-2 text-white text-sm font-semibold">
+        <button className=" mt-10 outline-none rounded-lg bg-orange p-2 text-white text-sm font-semibold">
           {" "}
           Search Rooms
         </button>
